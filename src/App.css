@@ -1,0 +1,287 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: barlow;
+}
+
+b {
+  font-family: barlow;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+body {
+  font-size: 15px;
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1280px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+h1 {
+  font-size: 80px;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 150px;
+  }
+}
+
+.sub-h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 56px;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 80px;
+  }
+}
+@media (min-width: 1280px) {
+  h2 {
+    font-size: 100px;
+  }
+}
+
+.sub-h2 {
+  font-size: 14px;
+  letter-spacing: 2.35px;
+}
+
+h3 {
+  font-size: 24px;
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1280px) {
+  h3 {
+    font-size: 56px;
+  }
+}
+
+h4 {
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  h4 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1280px) {
+  h4 {
+    font-size: 32px;
+  }
+}
+
+h5 {
+  font-size: 16px;
+  letter-spacing: 4.75px;
+}
+@media (min-width: 768px) {
+  h5 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1280px) {
+  h5 {
+    font-size: 28px;
+  }
+}
+
+nav {
+  letter-spacing: 2.7px;
+}
+
+button {
+  font-size: 20px;
+  font-family: "Barlow Condensed";
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  button {
+    font-size: 32px;
+  }
+}
+
+/* Home */
+.home {
+  background-size: 100% 100%;
+  color: white;
+  background-image: url(./components/home/img/background-home-mobile.jpg);
+}
+@media (min-width: 768px) {
+  .home {
+    background-image: url(./components/home/img/background-home-tablet.jpg);
+  }
+}
+@media (min-width: 1280px) {
+  .home {
+    background-image: url(./components/home/img/background-home-desktop.jpg);
+  }
+}
+
+.menu {
+  transition: transform 0.3s ease-in !important;
+}
+.menuOpen {
+  color: #ffffff;
+}
+
+p {
+  color: #d0d6f9;
+}
+
+li {
+  letter-spacing: 2.7px;
+}
+
+li > a:not(.active) {
+  border-bottom-width: 2px;
+  border-color: transparent;
+}
+li > a:not(.active):hover {
+  width: full;
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateX(0px);
+}
+
+
+  li > a:not(.active):hover {
+    border-bottom-width: 2px;
+  }
+
+
+li > .active {
+  width: full;
+  border-color: white;
+}
+
+
+  li > .active {
+    border-bottom-width: 2px;
+  }
+
+
+ul b {
+  cursor: default;
+  margin-right: 8px;
+  font-weight: bold;
+  color: white;
+}
+
+.button-section2 {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (min-width: 390px) {
+  .button-section2 {
+    margin-top: 2.5rem;
+  }
+  .button-section {
+    margin-top: 7rem;
+  }
+  .menuOpen {
+    transform: translateX(-7.1px);
+    color: #ffffff;
+  }
+}
+/* Destination */
+.destination {
+  background-size: 100% 100%;
+  color: white;
+  background-image: url(./components/destination/img/background-destination-mobile.jpg);
+}
+@media (min-width: 768px) {
+  .destination {
+    background-image: url(./components/destination/img/background-destination-tablet.jpg);
+  }
+}
+@media (min-width: 1536px) {
+  .destination {
+    background-image: url(./components/destination/img/background-destination-desktop.jpg);
+  }
+}
+
+.destination * > .isActive {
+  border-bottom-width: 4px;
+  border-color: white;
+}
+
+.destination * > .notActive {
+  color: #d0d6f9;
+}
+.destination * > .notActive:hover {
+  border-bottom-width: 4px;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Crew */
+.crew {
+  background-size: 100% 100%;
+  color: white;
+  background-image: url(./components/crew/img/background-crew-mobile.jpg);
+}
+@media (min-width: 768px) {
+  .destination {
+    background-image: url(./components/crew/img/background-crew-tablet.jpg);
+  }
+}
+@media (min-width: 1536px) {
+  .destination {
+    background-image: url(./components/crew/img/background-crew-desktop.jpg);
+  }
+}
+
+.crew * > .isActive {
+  background-color: white;
+  color: white;
+}
+
+.crew * > .notActive {
+  background-color: rgba(255, 255, 255, 0.17);
+}
+.crew * > .notActive:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Technology */
+.technology {
+
+  background-size: 100% 100%;
+  color: white;
+  background-image: url(./components/technology/img/background-technology-mobile.jpg);
+}
+@media (min-width: 768px) {
+  .destination {
+    background-image: url(./components/technology/img/background-technology-tablet.jpg);
+  }
+}
+@media (min-width: 1536px) {
+  .destination {
+    background-image: url(./components/technology/img/background-technology-desktop.jpg);
+  }
+}
+
+.technology * > .isActive {
+  background-color: white;
+  color: black;
+}
+
+.technology * > .notActive {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+.technology * > .notActive:hover {
+  border-color: white;
+}
